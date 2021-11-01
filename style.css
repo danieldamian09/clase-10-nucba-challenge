@@ -34,7 +34,7 @@
 
   .card{
     width: 400px;
-    height: 30%;
+    min-height: 40%;
     border-radius: 20px;
     background-color: var(--very-pale-blue);
     display: flex;
@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    box-shadow: 6px 14px 20px 0px #00000036;
   }
 
   .card__body{
@@ -63,12 +64,57 @@
   .card__body-text{
     font-size: 14px;
     text-align: center;
-    width: 80%;;
+    width: 80%;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    line-height: 20px;
 
   }
 
   .card__body-plan{
+    margin-top: 16px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 80%;
+    border-radius: 10px;
+    height: 4rem;
+    background-color: #dce0fa59;
+  }
+
+  .card__footer{
+    width: 80%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card_footer-button{
+    margin-top: 1rem;
+    border: none;
+    height: 3rem;
+    font-size: 14px;
+    border-radius: 10px;
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    cursor: pointer;
+    
+  }
+
+  .button-white{
+    background: none;
+    color: var(--desaturated-blue);
+    font-weight: bold;
+  }
+  
+  .button-shadow{
+    box-shadow: 3px 11px 20px 2px #0000004f;
+  }
+
+  .card_footer-button:hover{
+    background-color: var(--dark-blue);
+    color: #fff;
   }
 }
 
