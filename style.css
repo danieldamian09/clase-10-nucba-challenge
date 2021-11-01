@@ -4,7 +4,7 @@
 
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
-  --Dark-blue: hsl(223, 47%, 23%);
+  --dark-blue: hsl(223, 47%, 23%);
 }
 
 * {
@@ -30,6 +30,45 @@
     align-items: center;
     flex-direction: column;
   
+  }
+
+  .card{
+    width: 400px;
+    height: 30%;
+    border-radius: 20px;
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card__body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  .card__body-title{
+    font-size: 24px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .card__body-text{
+    font-size: 14px;
+    text-align: center;
+    width: 80%;;
+
+  }
+
+  .card__body-plan{
+    display: flex;
   }
 }
 
